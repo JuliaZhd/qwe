@@ -97,7 +97,11 @@ footer {
 .main-menu > .active > a {
     color: white;
     background: #0088cc;
-  }
+}
+.input {
+    display: block;
+    margin: 10px;
+}
 
   
 
