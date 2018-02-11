@@ -9,9 +9,7 @@ fs.onchange = function() {
     };
 };
   
-  /*fs.onfocus = function() {
-    if (this.className == 'error') { // сбросить состояние "ошибка", если оно есть
-      this.className = "";
-      error.innerHTML = "";
-    }
-  };*/
+chCol.onchange = function(){
+  document.getElementsByTagName('article')[0].style.backgroundColor = document.getElementById("chCol").value
+};
+
