@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster|Montserrat|Rubik" rel="stylesheet">
     <title>Qwerty-school</title>
 </head>
 <body>
@@ -38,19 +39,12 @@
                 <p>Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты.</p>
             </article>
             <aside>
-                <ul class="main-menu m1">
-                    <li><a href="#company">О компании</a></li>
-                    <li><a href="https://impuls-web.ru/kak-prizhat-futer-k-nizu-stranicy/">Услуги</a></li>
-                    <li><a href="#team">Сотрудники</a></li>
-                    <li class="active"><a href="#contacts">Контакты</a>
-                        <ul>
-                            <li><a href="#">Разработка</a></li>
-                            <li><a href="#">Продвижение</a></li>
-                            <li><a href="#">Контекст</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form action="" id="properties">
+                <div class=burger id="burg" >
+                    <div class="burg--line"></div>
+                    <div class="burg--line"></div>
+                    <div class="burg--line"></div>
+                </div>
+                <form action="" id="prop" class="form4">
                     <fieldset>
                         <legend>Введите размер шрифта:</legend>
                         <input  placeholder="Целое число от 8 до 24" id="fs" type="text" class="input">
@@ -60,14 +54,16 @@
                         <input class="input" placeholder="Изменить цвет" id="chCol" type="color">
                     </fieldset>
                     <fieldset>
-                        <input class="input" value="Удалить последний абзац" type="buttom">
+                        <input id="delLastP" value="Удалить последний абзац" type="buttom">
                     </fieldset>
                     <fieldset>
-                        <input class="input" value="Выбор шрифта" type="radio">
-                        <input class="input" value="Выбор шрифта" type="radio">
-                        <input class="input" value="Выбор шрифта" type="radio">
+                        <input class="input" value="Montserrat" type="radio">
+                        <input class="input" value="Indie Flower" type="radio">
+                        <input class="input" value="Lobster" type="radio">
+                        <input class="input" value="Lobster" type="radio">
                     </fieldset>
                 </form>	
+                </div>
             </aside>
         </div>
         <footer>Подвал</footer>

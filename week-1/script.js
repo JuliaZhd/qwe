@@ -13,3 +13,16 @@ chCol.onchange = function(){
   document.getElementsByTagName('article')[0].style.backgroundColor = document.getElementById("chCol").value
 };
 
+/*delLastP.onclick = function(){
+  if (document.getElementsByTagName('p').length > 1) {
+    document.getElementsByTagName('p') = document.getElementsByTagName('p').slice(0,-1);
+  };
+  else {
+    alert ("Нельзя удалять последний абзац!!")
+  };
+};*/
+  
+burg.onclick = function(e) {
+  e.target.classList.add('active');
+  document.getElementById('prop').classList.toggle('active');
+};

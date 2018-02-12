@@ -102,7 +102,20 @@ footer {
     display: block;
     margin: 10px;
 }
-
-  
+.form4 {
+    display: none;
+}
+.active {
+    display: block;
+}
+.burger {
+    display: block;
+}
+.burg--line {
+    height: 2px;
+    width: 30px;
+    background: #fff;
+    margin-bottom: 7px;
+}
 
   
