@@ -1,0 +1,71 @@
+.categories {
+    &-container {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+    .cat-items {
+        padding: 0;
+    }
+    &__item {
+        text-align: center;
+        height: 400px;
+        img {
+            margin-top: 99px;
+        }
+        h2 {
+            margin: 30px 0 21px 0;
+            color: #665f60;
+            font-family: "PT Sans";
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        p {
+            color: #665f60;
+            font-family: "PT Sans";
+            font-size: 18px;
+            font-style: italic;
+        }
+        &--tall {
+            background-image: url(../img/categories-5-bg.png);
+            background-color: #9f9acf;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 800px;
+            img {
+                margin-top: 116px;
+            }
+            h2 {
+                color: #fefcfd;
+                margin: 32px 0 118px 0;
+            }
+            p {
+                color: #fefcfd;
+            }
+            .borat {
+                font-weight: 700;
+                font-style: normal;
+            }
+        }
+        &--gray {
+            background-color: #dbdbdb;
+        }
+    }
+}
+
+@media (max-width:991px) {
+    .categories {
+        &__item {
+            border-bottom: 2px solid #665f60;
+            &--tall {
+                height: 400px;
+                img {
+                    margin-top: 99px;
+                }
+                h2 {
+                    margin: 30px 0 21px 0;
+                }
+            }
+        }
+    }
+}

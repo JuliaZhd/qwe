@@ -1,0 +1,49 @@
+    @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i');
+    @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600|PT+Sans:400,400i,700");
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }
+    
+    main {
+        background-color: #ebebeb;
+    }
+    
+    .container-fluid {
+        max-width: 1600px;
+        margin: 0 auto;
+    }
+    
+    .slick-dots {
+        bottom: -57px;
+        li {
+            margin: -2px;
+            button {
+                width: 20px;
+                height: 21px;
+                &:before {
+                    font-size: 22px;
+                    color: #ebebeb;
+                    content: "○";
+                }
+            }
+        }
+        .slick-active {
+            button {
+                &:before {
+                    font-size: 25px;
+                    color: #ebebeb;
+                    content: "●";
+                }
+            }
+        }
+    }
+    
+    @media (max-width:900px) {
+        .slick-next {
+            right: -25px
+        }
+        .slick-prev {
+            left: -25px
+        }
+    }
