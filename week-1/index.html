@@ -22,16 +22,19 @@
                     <a href="#contact">contact</a>
                 </nav>
           </header>
-            <div class="subheader">
-                <div class="container">
-                    <form action="">
-                        <input placeholder="Имя" required="" id="username" type="text">
-                        <input placeholder="Пароль" required="" id="password" type="password">
-                        <input value="Войти" type="submit">
-                        <input value="Регистрация" type="submit">
-                    </form>
-                </div>
+          <div class="subheader">
+            <div class="container">
+              <form action="" onsubmit="validate(this)">
+                <input placeholder="Имя" required="" name="auth_login" id="auth_login" type="text">
+                <input placeholder="Пароль" required="" id="auth_password" type="password">
+                <input value="Войти" type="submit" id="auth"> <br>
+                <input placeholder="Имя" required="" id="register_login" type="text">
+                <input placeholder="Пароль" required="" id="register_password" type="password">
+                <input placeholder="Еще раз введите Пароль" required="" id="register_confirmation" type="password">
+                <input value="Регистрация" type="submit" id="register">
+              </form>
             </div>
+          </div>
             <article>
                 <h1>Заголовок</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quos amet. Minima ad, quaerat iure, laudantium quibusdam eos corrupti non reiciendis ab vel deleniti sint facere fugit necessitatibus, consequatur tempora!</p>

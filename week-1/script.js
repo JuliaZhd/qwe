@@ -34,3 +34,15 @@ window.onclick = function onclickRadio() {
   }
 }
 
+function validate(form) {
+  var elems = form.elements;
+  var name = form.register_login.value;
+  var login1 = form.register_password.value;
+  var login2 = form.register_confirmation.value;
+  if (login1===login2) {
+    localStorage.setItem('name', 'login1')
+  }
+  else {
+    alert("Пароли должны быть идентичны!");    
+  }
+}
